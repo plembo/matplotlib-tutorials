@@ -5,5 +5,5 @@ https://github.com/CoreyMSchafer/code_snippets
 
 Video series playlist:
 
-https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_
+https://youtu.be/UO98lJQ3QGI
 
