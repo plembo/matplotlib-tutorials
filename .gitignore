@@ -1,0 +1,6 @@
+.Python
+.python-version
+.ipynb_checkpoints
+__pycache__/
+venv/
+
