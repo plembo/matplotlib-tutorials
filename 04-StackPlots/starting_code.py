@@ -13,7 +13,7 @@ labels = ['player1','player2','player3']
 
 plt.stackplot(minutes, player1, player2, player3, labels=labels)
 
-plt.legend()
+plt.legend(loc='upper left')
 
 plt.title("My Awesome Stack Plot")
 plt.tight_layout()
