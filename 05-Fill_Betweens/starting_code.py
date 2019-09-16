@@ -12,7 +12,15 @@ plt.plot(ages, dev_salaries, color='#444444',
 
 plt.plot(ages, py_salaries, label='Python')
 
-# overall_median = 57287
+overall_median = 57287
+
+plt.fill_between(ages, py_salaries, dev_salaries,
+                 where=(py_salaries > overall_median),
+                 interpolate=True, alpha=0.25)
+
+plt.fill_between(ages, py_salaries, overall_median,
+                 where=(py_salaries <= overall_median),
+                 interpolate=True, color='red', alpha=0.25)
 
 plt.legend()
 
