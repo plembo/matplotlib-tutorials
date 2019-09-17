@@ -7,8 +7,8 @@ plt.style.use('seaborn')
 
 data = pd.read_csv('data.csv')
 
-data['Date'] = pd.to_datetime(date['Date'])
-data.sort('Date', iplace=True)
+data['Date'] = pd.to_datetime(data['Date'])
+data.sort_values('Date', inplace=True)
 
 price_date = data['Date']
 price_close = data['Close']
