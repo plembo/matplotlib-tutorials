@@ -10,17 +10,19 @@ dev_salaries = data['All_Devs']
 py_salaries = data['Python']
 js_salaries = data['JavaScript']
 
-plt.plot(ages, py_salaries, label='Python')
-plt.plot(ages, js_salaries, label='JavaScript')
+fig, ax = plt.subplots()
 
-plt.plot(ages, dev_salaries, color='#444444',
+ax.plot(ages, py_salaries, label='Python')
+ax.plot(ages, js_salaries, label='JavaScript')
+
+ax.plot(ages, dev_salaries, color='#444444',
          linestyle='--', label='All Devs')
 
-plt.legend()
+ax.legend()
 
-plt.title('Median Salary (USD) by Age')
-plt.xlabel('Ages')
-plt.ylabel('Median Salary (USD)')
+ax.set_title('Median Salary (USD) by Age')
+ax.set_xlabel('Ages')
+ax.set_ylabel('Median Salary (USD)')
 
 plt.tight_layout()
 
