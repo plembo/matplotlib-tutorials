@@ -30,3 +30,6 @@ ax2.set_ylabel('Median Salary (USD)')
 plt.tight_layout()
 
 plt.show()
+
+fig1.savefig('fig1.png')
+fig2.savefig('fig2.png')
