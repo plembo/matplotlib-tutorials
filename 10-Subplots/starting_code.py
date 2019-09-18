@@ -10,7 +10,8 @@ dev_salaries = data['All_Devs']
 py_salaries = data['Python']
 js_salaries = data['JavaScript']
 
-fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1, sharex=True)
+fig1, ax1 = plt.subplots()
+fig2, ax2 = plt.subplots()
 
 ax1.plot(ages, dev_salaries, color='#444444',
          linestyle='--', label='All Devs')
